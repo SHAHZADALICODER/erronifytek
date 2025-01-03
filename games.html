@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games - ErronifyTek</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Header */
+        .main-header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .main-header .logo {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .main-header .logo span {
+            color: #f39c12;
+        }
+
+        .main-header .nav-links {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+        }
+
+        .main-header .nav-links li a {
+            color: #fff;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .main-header .nav-links li a:hover {
+            background-color: #f39c12;
+            color: #fff;
+        }
+
+        .main-header .nav-links li a.active {
+            background-color: #f39c12;
+            color: #fff;
+        }
+
+        /* Games Section */
+        .games-section {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .games-section h2 {
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .game-item {
+            display: inline-block;
+            width: 250px;
+            margin: 20px;
+            padding: 15px;
+            background-color: #f4f4f4;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .game-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .game-item h3 {
+            margin: 15px 0;
+            font-size: 1.5rem;
+            color: #333;
+        }
+
+        .game-item p {
+            font-size: 1rem;
+            color: #777;
+        }
+
+        .game-item .btn {
+            display: inline-block;
+            background: #f39c12;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-top: 10px;
+            text-decoration: none;
+        }
+
+        .game-item .btn:hover {
+            background-color: #e67e22;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .main-header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .main-header .nav-links {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .container {
+                width: 95%;
+            }
+
+            .game-item {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <h1 class="logo">Erronify<span>Tek</span></h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="games.html" class="active">Games</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="games-section">
+        <div class="container">
+            <h2>Our Games</h2>
+
+            <!-- Example Game Item -->
+            <div class="game-item">
+                <img src="icons/gameIcons/scarysis.jpg" alt="Game Image">
+                <h3>ScarySis</h3>
+                <p>Immerse yourself in the terrifying world of ScarySis. Save your sister while surviving the horrors of her evil soul. Can you endure the fear and rescue her?</p>
+                <a href="https://play.google.com/store/apps/details?id=com.erronifytek.scarysis.game" class="btn">Play Now</a>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 ErronifyTek. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

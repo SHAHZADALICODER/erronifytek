@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - ErronifyTek</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Header */
+        .main-header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .main-header .logo {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .main-header .logo span {
+            color: #f39c12;
+        }
+
+        .main-header .nav-links {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+        }
+
+        .main-header .nav-links li a {
+            color: #fff;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .main-header .nav-links li a:hover {
+            background-color: #f39c12;
+            color: #fff;
+        }
+
+        .main-header .nav-links li a.active {
+            background-color: #f39c12;
+            color: #fff;
+        }
+
+        /* About Section */
+        .about-section {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .about-section h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .about-section p {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Social Media Links */
+        .social-media {
+            margin-top: 30px;
+        }
+
+        .social-media a {
+            display: inline-block;
+            margin: 0 10px;
+            width: 40px;
+            height: 40px;
+        }
+
+        .social-media img {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+            transition: transform 0.3s;
+        }
+
+        .social-media img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .main-header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .main-header .nav-links {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .container {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <h1 class="logo">Erronify<span>Tek</span></h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="#" class="active">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="about-section">
+        <div class="container">
+            <h2>About ErronifyTek</h2>
+            <p>
+                At ErronifyTek, we are passionate about crafting exceptional mobile gaming experiences. 
+                Our dedicated team of developers and designers work tirelessly to bring you games that entertain, engage, and challenge. 
+                Join us on our journey to redefine mobile gaming.
+            </p>
+
+            <div class="social-media">
+                <a href="https://instagram.com" target="_blank">
+                    <img src="icons/instagram.png" alt="Instagram">
+                </a>
+                <a href="https://www.youtube.com/channel/UCHKufNrmI2AEuU3OAUIm5Pw" target="_blank">
+                    <img src="icons/youtube.png" alt="YouTube">
+                </a>
+                <a href="https://discord.gg/nVtVrz2d" target="_blank">
+                    <img src="icons/discord.png" alt="Discord">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 ErronifyTek. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ErronifyTek - Mobile Gaming</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Header */
+        .main-header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .main-header .logo {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .main-header .logo span {
+            color: #f39c12;
+        }
+
+        .main-header .nav-links {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+        }
+
+        .main-header .nav-links li a {
+            color: #fff;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .main-header .nav-links li a:hover {
+            background-color: #f39c12;
+            color: #fff;
+        }
+
+        .main-header .nav-links li a.active {
+            background-color: #f39c12;
+            color: #fff;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('hero-bg.jpg') no-repeat center center/cover;
+            color: #fff;
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .hero .btn {
+            display: inline-block;
+            background: #f39c12;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .main-header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .main-header .nav-links {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .hero {
+                padding: 30px 0;
+            }
+
+            .container {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <h1 class="logo">Erronify<span>Tek</span></h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2 style="color: black;">Welcome to ErronifyTek</h2>
+            <p style="color: black;">Your gateway to immersive mobile gaming experiences. Explore and play now!</p>
+            <a href="games.html" class="btn">Discover Our Games</a>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 ErronifyTek. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
